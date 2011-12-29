@@ -29,16 +29,29 @@ ul{
 	.mg_mobile{
 		
 	}
+	.mg_mobile .leftside{
+		width: 100%;
+		background: red;
+		float: left;	
+	}
+	.mg_mobile .rightside{
+		width: 500px;
+		background: blue;
+		float: left;	
+	}
 
 /* desktop */
 @media all and (min-width:800px){
 	.mg_fixed{
 		margin-left: 	auto;
 		margin-right: 	auto;
-		width: 			960px;
+		width: 			800px;
 		text-align: 	left;
 	}
 	.mg_fluid{
-		
+		width: 100%;
+	}
+	.mg_mobile .leftside{
+		width: 300px;
 	}
 }
