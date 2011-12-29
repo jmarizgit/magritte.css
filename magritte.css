@@ -1,0 +1,44 @@
+/*	magritte 2012
+ *	author: Mariz Melo
+ *	license: MIT
+ */
+ 
+/* RESET CSS */
+html, body,
+div, span,
+ul, li, dl, dt, dd, ol{
+	margin: 		0;
+	padding: 		0;
+	border:			0;
+	outline-style: 	0;
+	text-align:		left;
+}
+body{
+	font: 			100% "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
+	height: 		100%;
+	text-align:		center;
+}
+ul{
+	list-style: 	none;
+}
+
+/* LAYOUT */
+
+/* mobile */
+	
+	.mg_mobile{
+		
+	}
+
+/* desktop */
+@media all and (min-width:800px){
+	.mg_fixed{
+		margin-left: 	auto;
+		margin-right: 	auto;
+		width: 			960px;
+		text-align: 	left;
+	}
+	.mg_fluid{
+		
+	}
+}

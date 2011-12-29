@@ -1,0 +1,8 @@
+/* magritte website style */
+.logo{
+	background: black;
+	padding: 10px 0 15px 15px;	
+	color: white;
+	font-family: 'Varela+Round', sans-serif;
+	font-size: 22px;
+}
