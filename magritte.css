@@ -35,23 +35,50 @@ ul{
 		float: left;	
 	}
 	.mg_mobile .rightside{
-		width: 500px;
+		width: 100%;
 		background: blue;
 		float: left;	
 	}
 
 /* desktop */
-@media all and (min-width:800px){
+@media all and (min-width:960px){
 	.mg_fixed{
 		margin-left: 	auto;
 		margin-right: 	auto;
-		width: 			800px;
+		width: 			960px;
 		text-align: 	left;
 	}
 	.mg_fluid{
 		width: 100%;
 	}
-	.mg_mobile .leftside{
-		width: 300px;
+	
+	/* using fixed layout */
+	.mg_fixed .leftside{
+		width: 600px;
 	}
+	.mg_fixed .rightside{
+		width: 360px;
+	}
+}
+	
+
+/* magritte utility classes */
+.mg_clear{clean: both;}
+.mg_opacity{
+	-moz-opacity:.50; 
+	filter:alpha(opacity=50); 
+	opacity:.50;
+}
+.mg_rounded {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+.mg_shadow {
+  -moz-box-shadow: 2px 2px 2px black;
+  -webkit-box-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
 }
