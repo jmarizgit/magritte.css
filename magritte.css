@@ -1,5 +1,6 @@
 /*	magritte 2012
  *	author: Mariz Melo
+ *	url: http://magritte.emoriz.com
  *	license: MIT
  */
 /* RESET CSS */
@@ -49,13 +50,14 @@ ul{
 		width: 50%;
 		float: left;
 	}
-	.mg_mobile .mg_3col, .mg_mobile .mg_4col{
+	.mg_3col, .mg_4col, .mg_5col, .mg_6col{
 		width: 100%;
 		float: left;
 	}
 
 /* desktop */
 @media all and (min-width:960px){	/*define your layout min-size here*/
+	
 	.mg_fixed{
 		margin-left: 	auto;
 		margin-right: 	auto;
@@ -73,7 +75,6 @@ ul{
 	.mg_fixed .rightside{
 		width: 360px;
 	}
-
 
 	.mg_fixed .mg_1col{
 		width: 940px;
@@ -103,10 +104,24 @@ ul{
 		width: 220px;
 	}
 	
-	.mg_prefix1col{
+	.mg_fixed .mg_5col{	
+		background: #ccc;
+		margin: 10px;
+		padding: 10px 0;
+		width: 172px;
+	}
+	
+	.mg_fixed .mg_6col{	
+		background: #ccc;
+		margin: 10px;
+		padding: 10px 0;
+		width: 140px;
+	}
+	
+	.mg_skip1col{
 		margin-left: 250px !important;
 	}
-}
+}/* end:desktop */
 
 
 /* magritte utility classes */
