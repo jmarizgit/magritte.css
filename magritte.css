@@ -2,10 +2,9 @@
  *	author: Mariz Melo
  *	license: MIT
  */
- 
 /* RESET CSS */
 html, body,
-div, span,
+div, span, p,
 ul, li, dl, dt, dd, ol{
 	margin: 		0;
 	padding: 		0;
@@ -14,7 +13,7 @@ ul, li, dl, dt, dd, ol{
 	text-align:		left;
 }
 body{
-	font: 			100% "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
+	font:    		62.5% "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
 	height: 		100%;
 	text-align:		center;
 }
@@ -27,21 +26,36 @@ ul{
 /* mobile */
 	
 	.mg_mobile{
-		
+		font-size:	1.4em;	
 	}
+	
 	.mg_mobile .leftside{
-		width: 100%;
+		width: 		100%;
+		*width: 	600px;
 		background: red;
-		float: left;	
+		float: 		left;	
 	}
 	.mg_mobile .rightside{
 		width: 100%;
+		*width: 360px;
 		background: blue;
 		float: left;	
 	}
+	
+	.mg_mobile .mg_1col{
+		width: 100%;
+	}
+	.mg_mobile .mg_2col{
+		width: 50%;
+		float: left;
+	}
+	.mg_mobile .mg_3col, .mg_mobile .mg_4col{
+		width: 100%;
+		float: left;
+	}
 
 /* desktop */
-@media all and (min-width:960px){
+@media all and (min-width:960px){	/*define your layout min-size here*/
 	.mg_fixed{
 		margin-left: 	auto;
 		margin-right: 	auto;
@@ -59,15 +73,48 @@ ul{
 	.mg_fixed .rightside{
 		width: 360px;
 	}
-}
+
+
+	.mg_fixed .mg_1col{
+		width: 940px;
+		margin: 10px;
+		padding: 10px 0;
+		background: #ccc;
+		overflow: hidden;
+	}
+	.mg_fixed .mg_2col{	
+		background: #ccc;
+		margin: 10px;
+		padding: 10px 0;
+		width: 460px;
+	}
 	
+	.mg_fixed .mg_3col{	
+		background: #ccc;
+		margin: 10px;
+		padding: 10px 0;
+		width: 300px;
+	}
+	
+	.mg_fixed .mg_4col{	
+		background: #ccc;
+		margin: 10px;
+		padding: 10px 0;
+		width: 220px;
+	}
+	
+	.mg_prefix1col{
+		margin-left: 250px !important;
+	}
+}
+
 
 /* magritte utility classes */
-.mg_clear{clean: both;}
+.mg_clear{clear: both;}
 .mg_opacity{
 	-moz-opacity:.50; 
 	filter:alpha(opacity=50); 
-	opacity:.50;
+	opacity:.5;
 }
 .mg_rounded {
 	-webkit-border-radius: 5px;
